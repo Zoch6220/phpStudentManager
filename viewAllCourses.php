@@ -1,4 +1,14 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    // User is not logged in, redirect to login page
+    header("Location: login.php");
+    exit;
+}
+
+?>
+<?php
 require_once 'DAO\CourseDAO.php';
 require_once 'Database.php';
 
