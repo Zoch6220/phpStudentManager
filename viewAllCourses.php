@@ -160,7 +160,7 @@ $courses = $courseDAO->getCourses();
                             <td><?php echo htmlspecialchars($course->getCourseName()); ?></td>
                             <td><?php echo htmlspecialchars($course->getDescription()); ?></td>
                             <td>
-                                <a href="updateCourse.php?id=<?php echo $course->getCourseCode(); ?>" class="btn btn-primary btn-sm">Update</a>
+                                <a href="#" class="btn btn-primary btn-sm">Update</a>
                                 <a href="viewGrades.php?id=<?php echo $course->getCourseCode(); ?>" class="btn btn-secondary btn-sm">View Grades</a>
                             </td>
                         </tr>
