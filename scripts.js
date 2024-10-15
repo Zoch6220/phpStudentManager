@@ -4,11 +4,11 @@
     
  
 function clearForms() {
-    console.log("clearForms function called");
+    
     const forms = document.querySelectorAll('form');
-    console.log("Forms found:", forms);
+    
     forms.forEach(form => {
-        console.log("Resetting form:", form);
+        
         form.reset();
     });
 }
